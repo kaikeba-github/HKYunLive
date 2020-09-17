@@ -1,0 +1,6 @@
+framework module KKBCCLive {
+  umbrella header "KKBCCLive.h"
+
+  export *
+  module * { export * }
+}

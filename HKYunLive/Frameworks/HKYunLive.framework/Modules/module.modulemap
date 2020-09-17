@@ -1,0 +1,6 @@
+framework module HKYunLive {
+  umbrella header "HKYunLive.h"
+
+  export *
+  module * { export * }
+}

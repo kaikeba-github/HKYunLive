@@ -1,0 +1,16 @@
+PODS:
+  - HKYunLive (0.1.0)
+
+DEPENDENCIES:
+  - HKYunLive (from `../`)
+
+EXTERNAL SOURCES:
+  HKYunLive:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HKYunLive: 840c0eaa196e7efe28af326154c26bdcfc44f774
+
+PODFILE CHECKSUM: fe20e4a9ba247d6119fe41217ababb386f902e8a
+
+COCOAPODS: 1.9.3

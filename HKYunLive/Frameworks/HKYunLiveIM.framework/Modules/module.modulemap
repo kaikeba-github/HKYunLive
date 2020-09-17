@@ -1,0 +1,6 @@
+framework module HKYunLiveIM {
+  umbrella header "HKYunLiveIM.h"
+
+  export *
+  module * { export * }
+}

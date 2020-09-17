@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HKYunLive'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HKYunLive.'
+  s.summary          = 'HKYunLive Components'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ HKYunLive Components frameworks for application
                        DESC
 
-  s.homepage         = 'https://github.com/付桃/HKYunLive'
+  s.homepage         = 'https://www.kaikeba.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '付桃' => 'tfu@gaoxiaobang.com' }
-  s.source           = { :git => 'https://github.com/付桃/HKYunLive.git', :tag => s.version.to_s }
+  s.author           = { 'futao' => 'tfu@gaoxiaobang.com' }
+  s.source           = { :git => 'https://github.com/kaikeba-github/HKYunLive.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  if s.respond_to? 'swift_version'
+    s.swift_version = "5.0"
+  end
 
   s.source_files = 'HKYunLive/Classes/**/*'
+  s.vendored_frameworks = "HKYunLive/Frameworks/HKYunLive.framework"
+  s.vendored_frameworks = "HKYunLive/Frameworks/HKYunLiveDataLayerLibrary.framework"
+  s.vendored_frameworks = "HKYunLive/Frameworks/HKYunLiveIM.framework"
+  s.vendored_frameworks = "HKYunLive/Frameworks/KKBCCLive.framework"
   
   # s.resource_bundles = {
   #   'HKYunLive' => ['HKYunLive/Assets/*.png']
@@ -38,5 +45,18 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'MJExtension'
+  # s.dependency 'WCDB'
+  s.dependency 'YTKNetwork'
+  s.dependency 'AFNetworking'
+  s.dependency 'ReactiveObjC'
+  s.dependency 'pop'
+  s.dependency 'SDWebImage'
+  s.dependency 'MJRefresh'
+  s.dependency 'lottie-ios'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'SVProgressHUD'
+  s.dependency 'CCLivePlaySDK'
+  s.dependency 'TXIMSDK_iOS'
 end

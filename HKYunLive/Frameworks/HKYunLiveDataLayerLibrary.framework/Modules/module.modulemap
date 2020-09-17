@@ -1,0 +1,6 @@
+framework module HKYunLiveDataLayerLibrary {
+  umbrella header "HKYunLiveDataLayerLibrary.h"
+
+  export *
+  module * { export * }
+}
