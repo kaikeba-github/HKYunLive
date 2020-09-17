@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'HKYunLive_Example' do
+  pod 'HKYunLive', :path => '../'
+
+  target 'HKYunLive_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
