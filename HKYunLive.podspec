@@ -45,18 +45,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-
-  s.dependency 'MJExtension'
-  # s.dependency 'WCDB'
-  s.dependency 'YTKNetwork'
-  s.dependency 'AFNetworking'
-  s.dependency 'ReactiveObjC'
-  s.dependency 'pop'
-  s.dependency 'SDWebImage'
-  s.dependency 'MJRefresh'
-  s.dependency 'lottie-ios'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'SVProgressHUD'
-  s.dependency 'CCLivePlaySDK'
-  s.dependency 'TXIMSDK_iOS'
+  s.dependency 'HKYunSDK' #工程依赖的第三方库
+  s.dependency 'CCLivePlaySDK' #CC
+  s.dependency 'TXIMSDK_iOS' #hkyunlive_pods
 end
